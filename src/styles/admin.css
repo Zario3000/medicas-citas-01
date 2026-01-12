@@ -1,0 +1,80 @@
+/* ======================
+   HEADER ADMIN
+====================== */
+.admin-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.admin-title span {
+  color: #90caf9;
+}
+
+.admin-subtitle {
+  color: #cfd8dc;
+  margin-top: 6px;
+}
+
+/* ======================
+   TABS
+====================== */
+.admin-tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.admin-tabs {
+  background: linear-gradient(135deg, #1c2b33, #263238);
+  border-radius: 30px;
+  padding: 6px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.admin-tab {
+  color: #b0bec5 !important;
+  font-weight: 600;
+  text-transform: none;
+  min-width: 120px;
+}
+
+.admin-tab.Mui-selected {
+  color: white !important;
+}
+
+.admin-tab-indicator {
+  display: none;
+}
+
+/* ======================
+   CONTENIDO
+====================== */
+.admin-content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .admin-title {
+    font-size: 1.6rem;
+  }
+
+  .admin-tabs {
+    width: 100%;
+  }
+
+  .admin-tab {
+    min-width: auto;
+    padding: 10px;
+  }
+}

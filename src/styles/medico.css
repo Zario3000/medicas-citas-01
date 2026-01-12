@@ -1,0 +1,246 @@
+/* =========================
+   FONDO GENERAL
+========================= */
+.medico-bg {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #1b2b34
+  );
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+.medico-dashboard {
+  width: 100%;
+  max-width: 1300px;
+  padding: 60px 20px;
+  z-index: 2;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+.medico-title {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.medico-title span {
+  color: #90caf9;
+}
+
+.medico-subtitle {
+  text-align: center;
+  color: #cfd8dc;
+  margin-bottom: 50px;
+  font-size: 1rem;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+.medico-sections {
+  width: 100%;
+}
+
+/* =========================
+   CARD ESTADO
+========================= */
+.estado-card {
+  background: linear-gradient(
+    135deg,
+    #1c2b33,
+    #263238
+  );
+  color: white;
+  border-radius: 22px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+}
+
+/* =========================
+   TEXTO ESTADO
+========================= */
+.estado-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.estado-desc {
+  color: #b0bec5;
+  margin-bottom: 16px;
+}
+
+/* =========================
+   BOTÓN
+========================= */
+.toggle-btn {
+  background: linear-gradient(135deg, #1976d2, #42a5f5) !important;
+  color: white !important;
+  border-radius: 25px;
+  padding: 6px 24px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   GRID CITAS
+========================= */
+.citas-grid {
+  margin-top: 10px;
+}
+
+/* =========================
+   CARD CITA
+========================= */
+.cita-card {
+  background: linear-gradient(
+    135deg,
+    #263238,
+    #37474f
+  );
+  color: white;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cita-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 60px rgba(0,0,0,0.65);
+}
+
+/* =========================
+   INFO CITA
+========================= */
+.cita-paciente {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.cita-info {
+  font-size: 0.9rem;
+  color: #cfd8dc;
+}
+
+/* =========================
+   CHIP
+========================= */
+.estado-chip {
+  margin-top: 12px;
+}
+
+/* =========================
+   BOTÓN ATENDER
+========================= */
+.atender-btn {
+  margin-top: 15px !important;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a) !important;
+  color: white !important;
+  border-radius: 20px;
+}
+
+/* =========================
+   TEXTO VACÍO
+========================= */
+.no-citas {
+  color: #b0bec5;
+  margin-left: 10px;
+}
+
+/* =========================
+   CÍRCULOS ANIMADOS
+========================= */
+.bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.12;
+  animation: floatChaos infinite ease-in-out;
+}
+
+/* tamaños y posiciones */
+.c1 {
+  width: 180px;
+  height: 180px;
+  background: #42a5f5;
+  top: 10%;
+  left: 8%;
+  animation-duration: 18s;
+}
+
+.c2 {
+  width: 260px;
+  height: 260px;
+  background: #1976d2;
+  bottom: 15%;
+  right: 10%;
+  animation-duration: 22s;
+}
+
+.c3 {
+  width: 120px;
+  height: 120px;
+  background: #90caf9;
+  top: 60%;
+  left: 50%;
+  animation-duration: 16s;
+}
+
+.c4 {
+  width: 90px;
+  height: 90px;
+  background: #64b5f6;
+  top: 30%;
+  right: 30%;
+  animation-duration: 14s;
+}
+
+.c5 {
+  width: 140px;
+  height: 140px;
+  background: #1e88e5;
+  bottom: 35%;
+  left: 25%;
+  animation-duration: 20s;
+}
+
+.c6 {
+  width: 70px;
+  height: 70px;
+  background: #bbdefb;
+  top: 75%;
+  right: 20%;
+  animation-duration: 12s;
+}
+
+/* movimiento caótico controlado */
+@keyframes floatChaos {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(30px, -40px); }
+  50%  { transform: translate(-20px, 30px); }
+  75%  { transform: translate(40px, 20px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .medico-title {
+    font-size: 1.7rem;
+  }
+
+  .estado-title {
+    font-size: 1.2rem;
+  }
+}

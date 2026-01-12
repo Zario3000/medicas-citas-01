@@ -1,0 +1,91 @@
+/* =========================
+   OVERLAY DEL MODAL
+========================= */
+.custom-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1300;
+}
+
+/* =========================
+   CONTENEDOR DEL MODAL
+========================= */
+.custom-modal {
+  width: 400px;
+  max-width: 90%;
+  background: linear-gradient(135deg, #1c2b33, #263238);
+  border-radius: 18px;
+  padding: 32px;
+  color: white;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7);
+  animation: modalFadeIn 0.25s ease-out;
+}
+
+/* =========================
+   ANIMACIÓN
+========================= */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* =========================
+   INPUTS OSCUROS
+========================= */
+.custom-modal .MuiInputBase-root {
+  color: white;
+}
+
+.custom-modal .MuiInputLabel-root {
+  color: #b0bec5;
+}
+
+.custom-modal .MuiOutlinedInput-notchedOutline {
+  border-color: #455a64;
+}
+
+.custom-modal .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #64b5f6;
+}
+
+.custom-modal .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #42a5f5;
+}
+
+/* =========================
+   BOTÓN PRINCIPAL
+========================= */
+.custom-modal-btn {
+  margin-top: 24px !important;
+  padding: 12px !important;
+  border-radius: 16px !important;
+  font-weight: bold !important;
+  background: linear-gradient(135deg, #1976d2, #42a5f5) !important;
+  color: white !important;
+}
+
+.custom-modal-btn:hover {
+  background: linear-gradient(135deg, #1565c0, #1e88e5) !important;
+}
+
+/* =========================
+   ESTILO HEREDADO DEL APP LAYOUT
+========================= */
+.app-layout-style {
+  background: linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #1b2b34
+  );
+}
