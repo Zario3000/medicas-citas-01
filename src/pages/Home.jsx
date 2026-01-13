@@ -38,7 +38,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <img src="../../public/descarga.png" alt="Logo" className="logo" />
+          <img src="../../descarga.png" alt="Logo" className="logo" />
 
           <Typography className="hero-title">
             Plataforma de Citas Médicas
